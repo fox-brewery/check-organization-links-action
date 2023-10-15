@@ -1,0 +1,19 @@
+name: 'check-organization-links'
+description: 'Checks organization README.md to see if it includes a link to every repository in the organization'
+author: 'Edwin Kofler'
+
+# Define your inputs here.
+inputs:
+  milliseconds:
+    description: 'Your input description here'
+    required: true
+    default: '1000'
+
+# Define your outputs here.
+outputs:
+  time:
+    description: 'Your output description here'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
